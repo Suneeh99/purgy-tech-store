@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+}
+html { overflow-y: auto; }
+body {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: #ffffff;
+}
+.container {
+  position: relative; /* Change to relative */
+  width: 1340px;
+  margin: 0 auto;
+}
+.border {
+    border-right: solid #8c52ff 1px;
+    border-left: solid #8c52ff 1px;
+}
+.top-head {
+padding-right:15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  position: relative;
+  display: grid;
+  grid-template-columns:  1fr 1fr ;
+}
+.hrLine {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: #8c52ff;
+    flex-direction: column;
+}
+
+.top-cont {
+    padding: 40px 0px 40px 0px;
+    display: grid;
+    place-items: center;
+}
+
+.imageBox {
+    width: 800px;
+    height:200px;
+    position:relative;
+}
+
+.imageBox img {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.contact {
+align-items: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+
+.contactLogo {
+    width: 20px;
+    height:20px;
+    position:relative;
+}
+
+.contactLogo img {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.email {
+  align-items: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.emailLogo {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.emailLogo img {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.contactNumber p, .emailText p {
+    font-size:18px;
+  }
+  
+.contactNumber a, .emailText a {
+    color: #000000;
+    text-decoration: none; 
+  }
+
+.contactNumber a:hover, .emailText a:hover {
+    color: #8C52FF;
+}
+
+.bottom {
+  overflow: hidden;
+  border: 2px solid #ccc;
+  padding-left: 80px;
+  background-color: #ffffff;
+  align-items: center;
+  margin-top: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right:100px;
+  padding-left: 100px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.details {
+  margin-left: 120px;;
+}
+.f-Menu {
+  margin-left: 120px;;
+}
+.thb {
+  font-size: 20px;
+  font-weight: bold;
+}
+.tdb {
+
+  font-size: 15px;
+  font-weight: bold;
+}
+.td {
+  font-size: 15px;
+}
+.tdf {
+  font-size: 15px;
+  color: #000000;
+}
+.tdf a{
+  color:#000000;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.tdf a:hover {
+  color: #8C52FF;
+}
+  
+  .hrBLine {
+    position: relative;
+    display:flex;
+    background: #8C52FF;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+.no-items {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.no-items img {
+    width: 200px;
+    opacity: 0.6;
+}
+
+.back-home {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#upButton {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px; 
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+
+.back-home:hover {
+    background-color: #8c52ff; /* A darker shade for hover effect */
+    color: #ffffff;
+    scale: 1.05;
+}
+
+#my-cart-heading {
+  font-size: 35px;
+  margin-top: 10px; /* Adjust space above the heading */
+  margin-bottom: 10px; /* Adjust space below the heading */
+  padding: 10px 0px 50px 150px;
+  display: inline-block;
+  position: sticky;
+  z-index: 9999;
+  top: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  padding-bottom: 5px;
+  width: 1340px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+}
+#my-cart-heading a{
+  text-decoration: none;
+  color: #000000;
+}
+#my-cart-heading a:hover{
+  text-decoration: none;
+  color: #8C52FF;
+}
+
+#my-cart-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Adjust the thickness of the underline here */
+  border-radius: 100px;
+  background-color: #f10af1; /* This makes the underline use the text color */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.4s ease-in-out;
+}
+#my-cart-heading:hover::after {
+  transform: scaleX(1);/* Underline expands to full width on hover */
+}

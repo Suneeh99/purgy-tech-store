@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../paper"
+		},
+		{
+			"path": "../JS tutorial"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project",
+		"liveServer.settings.port": 5501
+	}
+}

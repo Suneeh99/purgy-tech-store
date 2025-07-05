@@ -1,0 +1,130 @@
+<html>
+    <title>My Cart - Purgy Tech Store</title>
+	<link rel="icon" type="imsgr/png" href="img/logo.png">
+	<head>
+		<link rel="stylesheet" type="text/css" href="cart.css">
+	</head>
+<body>
+    <div class="container">
+        <div class="border">
+            <div class="hrLine"></div>
+            <div class="hrLine"></div>
+			<div class="top-head">
+                <div class="imageBox">
+                    <img src="img/logo transparent.png">
+                </div>
+                <div class="top-cont">
+                        <div class="contact">
+                        <div class="contactLogo">
+                            <img src="img/contact-icon.png">
+                        </div>
+                        <div class="contactNumber">
+                            <p><a href="tel:+94761870937">+94761870937</a></p>
+                        </div>
+                    </div> 
+                    <div class="email">
+                        <div class="emailLogo">
+                            <img src="img/email-icon.png">
+                        </div>
+                        <div class="emailText">
+                            <p><a href="mailto:purgyxsh@proton.me">purgyXsh@proton.me</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+			</div>
+            <div class="tab">
+                <!-- Retain the navigation tabs from your homepage -->
+            </div>
+            <div class="content">
+                <div id="my-cart-heading"><a href="index.html">Home</a> > <a href="cart.html">My Cart</a></div>
+                <div class="no-items">
+                    <img src="img/empty-cart.png" alt="No Items in Cart">
+                    <h2>No available items.</h2>
+                    <a href="index.html" class="back-home">Back to Home</a>
+                </div>
+            </div>
+            
+            <div class="bottom">
+                <div class="details">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="thb">Official Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td">Order Pick Up:</td>
+                            </tr>
+                            <tr>
+                                <td class="td">238/E Kothalawela,</td>
+                            </tr>
+                            <tr>
+                                <td class="td">Kaduwela  10640</td>
+                            </tr>
+                            <tr>
+                                <td class="tdb">Pick-Up Only</td>
+                            </tr>
+                            <tr>
+                                <td class="tdb">Available Next</td>
+                            </tr>
+                            <tr>
+                                <td class="tdb">Working Day, Office</td>
+                            </tr>
+                            <tr>
+                                <td class="tdb">Visits are Strictly by</td>
+                            </tr>
+                            <tr>
+                                <td class="tdb">Appointment Only</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="f-menu">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="thb">Footer Menu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td class="tdf"><a href="documents/Terms & Conditions.pdf">Terms & Conditions</a></td>
+                            </tr>
+                            <tr>
+                                <td class="tdf"><a href="tel:+94761870937">Contact Us</a></td>
+                            </tr>
+                            <tr>
+                                <td class="tdf"><a href="documents/FAQs.pdf">FAQs</a></td>
+                            </tr>
+                        </tbody>
+                </table>
+                </div>
+            </div>
+            <div class="hrBLine"></div>
+            
+        </div>
+    </div>
+    <img id="upButton" src="img/upbutton.png" onclick="scrollToTop()" alt="Go to top">
+    <script>
+        // JavaScript functions
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("upButton").style.display = "block";
+            } else {
+                document.getElementById("upButton").style.display = "none";
+            }
+        }
+        
+    </script>
+</body>
+</html>
